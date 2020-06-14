@@ -515,7 +515,8 @@ let destroyHooks = {
       marker.section.markers.remove(marker);
     }
 
-    if (markupElement.parentNode) {
+    // if (markupElement.parentNode) {
+    if (markupElement && markupElement.parentNode) {
       // if no parentNode, the browser already removed this element
       markupElement.parentNode.removeChild(markupElement);
     }
